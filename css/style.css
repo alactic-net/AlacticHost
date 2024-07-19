@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
+
+
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    /* font-family: 'Protest Strike', sans-serif; */
+    font-family: 'Sintony', sans-serif;
+    transition: 300ms ease-in;
+}
+
+body{
+    background-color: #ffffff;
+    
+}
+
+
+h1{
+    padding: 0;
+    margin-bottom: 3vh;
+}
+
+.main-section{
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-main-section{
+  margin: 0;
+    padding: 0;
+    height:100vh;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-link{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.main-link a{
+    text-decoration: none;
+    background-color: black;
+    padding: 12px 18px;
+    color: white;
+    border: 1px solid white;
+    margin: 0 5vh;
+}
+
+.main-link a:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 10px 5px black;
+}
+
+.main-link a {
+    background: #fffcd5;
+    box-shadow: 4px 4px #2445ff, 9px 9px #151515;
+    color: #151515;
+    text-transform: lowercase;
+    border: solid 2px #151515;
+  
+    text-decoration: none;
+  
+    padding: 18px 32px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    cursor: pointer;
+    overflow: hidden;
+    transition-delay: 0s !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px;
+    font-family: sans-serif;
+  }
+  .main-link a::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: #151515;
+    z-index: -1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .main-link a:hover::before {
+    width: 100%;
+    left: 0;
+    right: unset;
+  }
+  .main-link a:hover {
+    box-shadow: 0 0 #2433ff, 0 0 #151515;
+    color: white;
+  }
+
+
+  @media only screen and (max-width: 990px) {
+    .main-link{
+        flex-direction: column;
+        height: 20%;
+        justify-content: space-between;
+        width: 100%;
+    }
+  }
+
+
+
+  .f-main-section div{
+    height: 55vh;
+    width: 20%;
+    padding: 25px;
+    box-shadow: -5px 10px 0px 3px rgb(0, 0, 0);
+    border: 1px solid black;
+    background-color: #4d4d4d23;
+  }
+
+
+    .f-main-section div a{
+      text-decoration: none;
+      padding: 3px 5px;
+      /* border: 1px solid black; */
+      
+    }
